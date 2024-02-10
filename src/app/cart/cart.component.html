@@ -1,0 +1,12 @@
+<h2>Cart Component</h2>
+<button type="button" class="btn btn-dark my-3" routerLink="/productlist">Back</button><br>
+
+Product Status: {{pdtStatus}}  <!-- interpolation -->
+
+<br><br>
+
+&nbsp;
+<input type="button" value="Add to Cart" (click)="addCartItems()" [disabled]="isCreate"> &nbsp;
+<input type="button" value="Remove from Cart" (click)="removeCartItems()" [disabled]="isRemove" > <br><br>
+<p>Cart Items : {{productCount}} </p><br><br>
+
